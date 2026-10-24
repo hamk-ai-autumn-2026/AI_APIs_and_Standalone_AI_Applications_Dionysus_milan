@@ -1,0 +1,7 @@
+Retrieval-Augmented Generation Notes
+
+Retrieval-augmented generation, or RAG, combines information retrieval with a language model. Before generating an answer, a RAG application searches a collection of reference documents for relevant passages. The passages are inserted into the model prompt so the answer can be grounded in the available source text. The application should display the retrieved passages so a user can check what evidence was used.
+
+A document can be divided into smaller overlapping chunks. Overlap helps preserve meaning near chunk boundaries. Each chunk can be converted to a numerical vector called an embedding. Embeddings help compare the semantic similarity between a new question and stored passages, even if the question uses slightly different words.
+
+In this coursework example, SQLite stores text chunks, their source document names, and embedding vectors. Python calculates cosine similarity to rank a small number of stored chunks. A separate memory.md file stores the user's presentation preferences. The memory file is not part of the evidence collection and must not be used to invent facts about the documents.

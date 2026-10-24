@@ -1,0 +1,7 @@
+Greenhouse Monitoring Project Notes
+
+The project goal is to observe soil moisture and air conditions in a small educational greenhouse. The prototype uses an ESP32 microcontroller, a capacitive soil-moisture sensor, and a DHT22 temperature-and-humidity sensor. The ESP32 collects readings every ten minutes. The prototype sends readings over Wi-Fi to a local Python application. The application saves measurements in a local SQLite database for later visualization.
+
+The moisture alert is triggered when the reported soil-moisture reading falls below 30 percent. The user interface shows recent readings and whether an alert is active. The alert threshold can be changed in a configuration file. The initial prototype does not automatically activate a water pump. Instead, it warns the operator so they can inspect the plants.
+
+The first demonstration will include a live moisture reading, a temperature reading, and a chart of stored measurements. A later extension may add automatic irrigation, but that is not part of the first demonstration. The project team is responsible for documenting their sensor connections and testing the alert with both dry and wet soil.

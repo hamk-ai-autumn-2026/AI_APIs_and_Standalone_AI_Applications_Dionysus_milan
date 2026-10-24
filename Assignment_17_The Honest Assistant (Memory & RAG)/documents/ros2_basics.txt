@@ -1,0 +1,7 @@
+ROS 2 Introductory Notes
+
+ROS 2 is a framework and collection of tools for building robot software. A robot application can contain multiple nodes. Each node performs a focused function, such as reading a camera, controlling a motor, or planning a path. Separating functions into nodes makes the software easier to test and maintain.
+
+A ROS 2 topic is used for continuous message exchange. A publisher sends messages to a named topic; one or more subscribers receive those messages. For example, a temperature sensor node might publish temperature measurements while a dashboard node subscribes and displays them. A service follows a request-and-response pattern and is appropriate for quick operations that produce a direct result.
+
+ROS 2 actions are useful for longer-running operations such as driving to a navigation goal. An action can send feedback while an operation is underway and may be cancelled. Topics, services, and actions serve different communication needs. The notes do not provide instructions for a particular robot model; they cover the basic ideas only.
