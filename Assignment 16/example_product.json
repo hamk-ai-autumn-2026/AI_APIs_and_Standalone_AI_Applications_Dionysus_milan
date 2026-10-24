@@ -1,0 +1,16 @@
+{
+  "source_url": "https://example.com/demo-product",
+  "name": "Demo USB Desk Fan",
+  "price": {
+    "amount": "19.90",
+    "currency": "EUR"
+  },
+  "description": "A compact USB-powered desk fan with three speed settings and an adjustable stand. Includes a 1-metre USB cable. Available in white.",
+  "rating": {
+    "value": 4.3,
+    "best": 5.0,
+    "worst": 1.0
+  },
+  "extraction_method": "JSON-LD Product",
+  "warnings": []
+}
