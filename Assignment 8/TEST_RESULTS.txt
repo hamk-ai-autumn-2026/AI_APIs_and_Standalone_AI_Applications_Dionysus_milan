@@ -1,0 +1,16 @@
+Exercise #8 — Offline validation results
+
+Command: python -m unittest discover -s tests -v
+Result: 15 tests passed (no actual paid API requests)
+
+Validated:
+- --prompt, --count, --aspect-ratio and provider-specific option checks
+- Base64 data and data-URI decoding
+- Temporary HTTPS URL download using a mocked HTTP client
+- Network failure handling using a mocked connection error
+- Replicate FileOutput-style response handling
+- OpenAI, fal and Replicate adapter requests using mocked SDKs
+- Real-image verification and file-format extension selection
+- Safe, unique filenames with exclusive file creation
+- Multiple locally saved images with mocked provider responses
+- Partial save retention after a simulated API failure
