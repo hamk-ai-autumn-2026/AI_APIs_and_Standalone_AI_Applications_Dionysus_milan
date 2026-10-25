@@ -1,0 +1,228 @@
+{
+  "title": "Agricultural Robotics: Perception, Field Tasks, and Deployment Challenges",
+  "abstract": "Precision agriculture increasingly uses robotic platforms to support agricultural tasks under real-world environmental and operational constraints. This short technical overview discusses the major roles of mobile field robots, the contribution of machine vision to autonomous navigation, and the importance of evaluating autonomy outside controlled environments. It draws on peer-reviewed reviews published between 2021 and 2026. The research shows that agricultural robot design is best understood as a combination of task requirements, mechanical platform selection, perception, localization, motion control, and evaluation settings. Key challenges involve sensing reliability, uneven terrain, crop variability, cost, and limited field-scale evidence. The article concludes with practical considerations for research and deployment.",
+  "introduction": [
+    {
+      "text": "Agricultural robotics aims to automate or assist with demanding agricultural work while responding to the need for resource-efficient production. Robots operating outdoors encounter changing crop geometry, uneven ground, and weather-related uncertainty that make agricultural environments different from fixed industrial production lines.",
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "text": "Recent reviews recommend examining robot capabilities together with the activities they perform. A platform designed for monitoring has a different sensing, actuation, and endurance profile from one intended for weeding or harvesting; assessments should therefore connect performance to the actual task and evaluation environment.",
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Agricultural Tasks and Robot Platforms",
+      "paragraphs": [
+        {
+          "text": "Agricultural tasks addressed in field robotics literature include monitoring, crop phenotyping, weed control, spraying, and harvesting. These applications differ in the precision of localization they require, how robots interact with plants, and whether their tools need to manipulate objects or simply gather observations.",
+          "source_ids": [
+            "S3",
+            "S4"
+          ]
+        },
+        {
+          "text": "Field robots may use wheeled or tracked ground vehicles, airborne platforms, or constrained greenhouse and gantry arrangements. Comparing systems only by whether they contain autonomous navigation can conceal important differences in energy consumption, operating area, payload, tool geometry, and supervision requirements.",
+          "source_ids": [
+            "S1",
+            "S4"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Machine Vision and Autonomous Navigation",
+      "paragraphs": [
+        {
+          "text": "Machine vision gives an agricultural robot observations of crop rows, obstacles, and local surroundings. A review of navigation-related vision applications highlights its relevance to agricultural automation and discusses visual sensing challenges arising from real-world field conditions. A navigation system must combine these observations with decisions about position and motion.",
+          "source_ids": [
+            "S2"
+          ]
+        },
+        {
+          "text": "An integrated autonomy stack includes perception, localization, planning, motion control, and the actuator interface. Vision by itself does not establish operational reliability; a successful platform must also handle imperfect detection, changing environments, and control actions during extended work cycles. These functions should be evaluated together.",
+          "source_ids": [
+            "S2",
+            "S4"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Evaluation and Remaining Challenges",
+      "paragraphs": [
+        {
+          "text": "A systematic review covering 59 field robots illustrates the breadth of agricultural robot research and its task diversity. Such reviews are useful for identifying common hardware approaches and recurring limitations, but broad comparisons require caution because test crops, field conditions, robot types, and performance measures may differ.",
+          "source_ids": [
+            "S3"
+          ]
+        },
+        {
+          "text": "Future development depends not only on improved components but also on consistent validation of whole systems. Researchers need to describe task context, field setting, operating duration, safety and supervision assumptions, and measurable performance so that laboratory achievements can be interpreted against agricultural deployment requirements.",
+          "source_ids": [
+            "S1",
+            "S4"
+          ]
+        }
+      ]
+    }
+  ],
+  "conclusion": [
+    {
+      "text": "Agricultural robotics is a systems-engineering problem rather than a single algorithmic challenge. The reviewed literature connects practical agricultural tasks with platform design, visual perception, autonomous navigation, and meaningful evaluation. Reliable field deployment will require robust integration and reporting under representative working conditions.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "topic": "Robotics in Precision Agriculture (illustrative PDF preview)",
+  "references": [
+    {
+      "id": "S1",
+      "authors": [
+        {
+          "given": "Luiz F. P.",
+          "family": "Oliveira"
+        },
+        {
+          "given": "António P.",
+          "family": "Moreira"
+        },
+        {
+          "given": "Manuel F.",
+          "family": "Silva"
+        }
+      ],
+      "year": 2021,
+      "title": "Advances in Agriculture Robotics: A State-of-the-Art Review and Challenges Ahead",
+      "publication_title": "Robotics",
+      "doi": "10.3390/robotics10020052",
+      "url": "https://doi.org/10.3390/robotics10020052",
+      "volume": "10",
+      "issue": "2",
+      "pages": "52",
+      "abstract": "",
+      "verified": true,
+      "verification_url": "https://www.mdpi.com/2218-6581/10/2/52",
+      "discovered_via": "Publisher page checked for illustrative sample only"
+    },
+    {
+      "id": "S2",
+      "authors": [
+        {
+          "given": "Tianhai",
+          "family": "Wang"
+        },
+        {
+          "given": "Bin",
+          "family": "Chen"
+        },
+        {
+          "given": "Zhenqian",
+          "family": "Zhang"
+        },
+        {
+          "given": "Han",
+          "family": "Li"
+        },
+        {
+          "given": "Man",
+          "family": "Zhang"
+        }
+      ],
+      "year": 2022,
+      "title": "Applications of machine vision in agricultural robot navigation: A review",
+      "publication_title": "Computers and Electronics in Agriculture",
+      "doi": "10.1016/j.compag.2022.107085",
+      "url": "https://doi.org/10.1016/j.compag.2022.107085",
+      "volume": "198",
+      "issue": "",
+      "pages": "107085",
+      "abstract": "",
+      "verified": true,
+      "verification_url": "https://www.sciencedirect.com/science/article/pii/S0168169922004021",
+      "discovered_via": "Publisher page checked for illustrative sample only"
+    },
+    {
+      "id": "S3",
+      "authors": [
+        {
+          "given": "Mattia",
+          "family": "Fontani"
+        },
+        {
+          "given": "Sofia Matilde",
+          "family": "Luglio"
+        },
+        {
+          "given": "Lorenzo",
+          "family": "Gagliardi"
+        },
+        {
+          "given": "Andrea",
+          "family": "Peruzzi"
+        },
+        {
+          "given": "Christian",
+          "family": "Frasconi"
+        },
+        {
+          "given": "Michele",
+          "family": "Raffaelli"
+        },
+        {
+          "given": "Marco",
+          "family": "Fontanelli"
+        }
+      ],
+      "year": 2025,
+      "title": "A Systematic Review of 59 Field Robots for Agricultural Tasks: Applications, Trends, and Future Directions",
+      "publication_title": "Agronomy",
+      "doi": "10.3390/agronomy15092185",
+      "url": "https://doi.org/10.3390/agronomy15092185",
+      "volume": "15",
+      "issue": "9",
+      "pages": "2185",
+      "abstract": "",
+      "verified": true,
+      "verification_url": "https://www.mdpi.com/2073-4395/15/9/2185",
+      "discovered_via": "Publisher page checked for illustrative sample only"
+    },
+    {
+      "id": "S4",
+      "authors": [
+        {
+          "given": "Natheer",
+          "family": "Almtireen"
+        },
+        {
+          "given": "Mutaz",
+          "family": "Ryalat"
+        }
+      ],
+      "year": 2026,
+      "title": "Robotics in Precision Agriculture: Task-, Platform-, and Evaluation-Oriented Review",
+      "publication_title": "Robotics",
+      "doi": "10.3390/robotics15040081",
+      "url": "https://doi.org/10.3390/robotics15040081",
+      "volume": "15",
+      "issue": "4",
+      "pages": "81",
+      "abstract": "",
+      "verified": true,
+      "verification_url": "https://www.mdpi.com/2218-6581/15/4/81",
+      "discovered_via": "Publisher page checked for illustrative sample only"
+    }
+  ],
+  "mode": "grounded"
+}
